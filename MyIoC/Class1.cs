@@ -9,10 +9,12 @@ namespace MyIoC
 	[ImportConstructor]
 	public class CustomerBLL
 	{
-        public int Property { get; set;}
-		public CustomerBLL(ICustomerDAL dal, Logger logger)
-		{
-            Property = default(int);
+        public Logger Logger { get; set;}
+        public ICustomerDAL Dal { get; set;}
+        public CustomerBLL(ICustomerDAL dal, Logger logger)
+        {
+            Dal = dal;
+            Logger = logger;
         }
 	}
 

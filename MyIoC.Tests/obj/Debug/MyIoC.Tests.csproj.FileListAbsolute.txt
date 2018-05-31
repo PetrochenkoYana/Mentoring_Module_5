@@ -6,3 +6,11 @@ D:\D1-D2\05. Reflection\TaskMyIoC\Task_MyIoC\MyIoC.Tests\bin\Debug\MyIoC.pdb
 D:\D1-D2\05. Reflection\TaskMyIoC\Task_MyIoC\MyIoC.Tests\obj\Debug\MyIoC.Tests.csprojResolveAssemblyReference.cache
 D:\D1-D2\05. Reflection\TaskMyIoC\Task_MyIoC\MyIoC.Tests\obj\Debug\MyIoC.Tests.dll
 D:\D1-D2\05. Reflection\TaskMyIoC\Task_MyIoC\MyIoC.Tests\obj\Debug\MyIoC.Tests.pdb
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\obj\Debug\MyIoC.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\obj\Debug\MyIoC.Tests.dll
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\obj\Debug\MyIoC.Tests.pdb
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\bin\Debug\MyIoC.Tests.dll
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\bin\Debug\MyIoC.Tests.pdb
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\bin\Debug\MyIoC.dll
+C:\Users\Yana_Petrachenka\Documents\Visual Studio 2015\Projects\Reflection\MyIoC.Tests\bin\Debug\MyIoC.pdb

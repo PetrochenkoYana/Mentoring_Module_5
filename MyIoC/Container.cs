@@ -61,9 +61,12 @@ namespace MyIoC
 
         public object CreateInstance(Type type)
         {
-            var resolvedType = ContainerTypes[type];
-            if (resolvedType == null)
-                throw new Exception();
+            if (!ContainerTypes.ContainsKey(type))
+            {
+                throw new ResolvedTypeNotFoundException("There is no appropriate item in container to resolve this type. Add resolver for this type to container. ");
+            }
+
+            var resolvedType = ContainerTypes[type];               
             var constructor = resolvedType.GetConstructors().FirstOrDefault();
             var propsResolvers = constructor.GetParameters().Select(p => Activator.CreateInstance(ContainerTypes[p.ParameterType])).ToArray();
             return Activator.CreateInstance(resolvedType, propsResolvers);
@@ -71,8 +74,22 @@ namespace MyIoC
 
         public T CreateInstance<T>()
         {
-            var resolvedType = ContainerTypes[typeof(T)];
-            return (T)Activator.CreateInstance(resolvedType);
+            var instance = (T)Activator.CreateInstance(typeof(T));
+            PropertyInfo[] props = typeof(T).GetProperties();
+
+            foreach (var property in props)
+            {
+                property.SetValue(instance, Activator.CreateInstance(ContainerTypes[property.PropertyType]));
+            }
+            return instance;
+        }
+    }
+
+    public class ResolvedTypeNotFoundException : ApplicationException
+    {
+        public ResolvedTypeNotFoundException(string message)
+       : base(message)
+        {
         }
     }
 }
